@@ -19,7 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_gravity="bottom"
-        app:labelVisibilityMode="selected"
-        app:menu="@menu/nav_menu"/>
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/nav_menu"
+        android:background="@drawable/rounded"
+        android:paddingHorizontal="20dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
