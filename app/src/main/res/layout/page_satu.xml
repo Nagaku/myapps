@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_chat">
+    <ImageView
+        android:id="@+id/h1"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/h2"
+        android:layout_below="@id/h1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@drawable/not_so_rounded"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/h3"
+        android:layout_below="@id/h2"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby bermain game"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@drawable/not_so_round_left"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/h4"
+        android:layout_below="@id/h3"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Makanan kesukaan Mie jenis apapun"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@drawable/not_so_rounded"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/h5"
+        android:layout_below="@id/h4"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Minuman kesukaan Jus jenis apapun"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@drawable/not_so_round_left"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/h8"
+        android:layout_above="@+id/h9"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman ini berisi pengenalan singkat tentang pembuat"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/not_so_rounded"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/h9"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/real_round"
+            android:layout_marginHorizontal="10dp"></View>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bulat_kosong"
+            android:layout_marginHorizontal="10dp"></View>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bulat_kosong"
+            android:layout_marginHorizontal="10dp"></View>
+
+    </LinearLayout>
+
+</RelativeLayout>

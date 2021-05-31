@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.michael123.Converter;
 import com.example.michael123.R;
 
 import java.io.ByteArrayOutputStream;
@@ -30,7 +31,7 @@ import com.example.michael123.model.Gallery;
  * Use the {@link FragmentGallery#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentGallery extends Fragment {
+public class FragmentGallery extends Fragment implements Converter {
 
     private List<Gallery> gallery = new ArrayList<>();
 
@@ -95,7 +96,7 @@ public class FragmentGallery extends Fragment {
         return view;
     }
 
-    public static Bitmap drawableToBitmap (Drawable drawable) {
+    public Bitmap drawableToBitmap (Drawable drawable) {
 
         if (drawable instanceof BitmapDrawable) {
             return ((BitmapDrawable)drawable).getBitmap();

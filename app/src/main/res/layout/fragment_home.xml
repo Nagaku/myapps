@@ -1,16 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentHome"
     android:orientation="vertical"
-    android:background="@color/purple_500">
+    android:gravity="center_horizontal">
 
-    <!-- TODO: Update blank com.example.michael123.fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@id/h1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="15dp">
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/h11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/foto"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingHorizontal="20dp"
+        android:paddingTop="8dp"
+        android:layout_below="@id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_chat">
+
+
+        <TextView
+            android:id="@+id/h2"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_blue"
+            android:layout_margin="8dp"
+            android:background="@drawable/not_so_rounded"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/h2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/not_so_round_left"
+            android:padding="10dp"
+            android:text="Hobby bermain game"
+            android:textAlignment="center"
+            android:textColor="@color/text_blue"
+            android:textSize="16dp" />
+
+        <TextView
+                android:id="@+id/h4"
+                android:layout_below="@id/h3"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Makanan kesukaan Mie jenis apapun"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/text_blue"
+                android:layout_margin="8dp"
+                android:background="@drawable/not_so_rounded"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/h5"
+                android:layout_below="@id/h4"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Minuman kesukaan Jus jenis apapun"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/text_blue"
+                android:layout_margin="8dp"
+                android:background="@drawable/not_so_round_left"
+                android:padding="10dp"/>
+
+        <TextView
+            android:layout_below="@id/h5"
+            android:id="@+id/h6"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest saya belajar hal-hal baru"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/text_blue"
+            android:layout_margin="8dp"
+            android:background="@drawable/not_so_rounded"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/h7"
+            android:layout_below="@id/h6"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cita-cita saya menjadi orang kaya"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/text_blue"
+            android:layout_margin="8dp"
+            android:background="@drawable/not_so_round_left"
+            android:padding="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

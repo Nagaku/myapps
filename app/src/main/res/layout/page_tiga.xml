@@ -3,21 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FragmentProfile"
+    tools:context=".TourActivity"
     android:background="#A980FA">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:orientation="vertical"
         android:gravity="center_horizontal">
         <ImageView
+            android:id="@+id/pg21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/a1"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
 
         <TextView
+            android:id="@+id/pg22"
+            android:layout_below="@id/pg21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/desc"
@@ -29,6 +33,8 @@
             android:padding="15dp"/>
 
         <LinearLayout
+            android:id="@+id/pg23"
+            android:layout_below="@id/pg22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -75,67 +81,62 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:orientation="horizontal"
-            android:layout_gravity="top"
-            android:background="@color/white">
+        <Button
+            android:id="@+id/siap"
+            android:layout_above="@id/h8"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/not_so_round_left"
+            android:text="SIAP!!!"
+            android:textColor="#9D2CB8"
+            android:onClick="testo"
+            />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Call Me"
-                android:textColor="@color/black"
-                android:textSize="22sp"
-                android:layout_gravity="right"
-                android:textAlignment="gravity"
-                android:rotation="-90"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="300dp"
-                android:layout_weight="1"
-                android:text="Mail Me"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:rotation="-90"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_weight="1"
-                android:layout_height="200dp"
-                android:text="Follow Me"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textAlignment="center"
-                android:rotation="-90"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="200dp"
-                android:layout_weight="1"
-                android:text="Find Me"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:rotation="-90"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_weight="1"
-                android:layout_height="200dp"
-                android:text="Version Me"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textAlignment="center"
-                android:rotation="-90"
-                android:gravity="center"/>
+        <TextView
+            android:id="@+id/h8"
+            android:layout_above="@+id/h9"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pada halaman ini tedapat info kontak, Klik siap!!! untuk lanjut ke aplikasi"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/not_so_rounded"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/h9"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/bulat_kosong"
+                android:layout_marginHorizontal="10dp"></View>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/bulat_kosong"></View>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/real_round"
+                android:layout_marginHorizontal="10dp"></View>
 
         </LinearLayout>
 
-    </LinearLayout>
+
+    </RelativeLayout>
 
 
 
