@@ -27,12 +27,12 @@
         <View
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:background="@drawable/real_round"
+            android:background="@drawable/bulat_kosong"
             android:layout_marginHorizontal="10dp"></View>
         <View
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:background="@drawable/bulat_kosong"
+            android:background="@drawable/real_round"
             android:layout_marginHorizontal="10dp"></View>
         <View
             android:layout_width="10dp"
