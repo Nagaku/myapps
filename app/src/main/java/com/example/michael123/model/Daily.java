@@ -12,9 +12,10 @@ public class Daily {
     public Daily() {
     }
 
-    public Daily(Bitmap photo, String title) {
+    public Daily(Bitmap photo, String title, String body) {
         this.photo = photo;
         this.title = title;
+        this.body = body;
     }
 
     public Bitmap getPhoto() {

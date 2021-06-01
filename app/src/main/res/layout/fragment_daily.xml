@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".FragmentDaily"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@drawable/splash">
 
     <!-- TODO: Update blank com.example.michael123.fragment layout -->
 
@@ -13,15 +13,20 @@
         android:id="@+id/reFriend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="5dp"/>
+        android:paddingVertical="5dp"
+        android:background="@drawable/splash"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reActivity"
-        android:layout_below="@id/reFriend"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
+        android:layout_below="@id/reFriend"
         android:layout_marginVertical="5dp"
-        android:layout_margin="5dp"/>
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradient_chat"
+        android:backgroundTint="@color/white" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -29,6 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:background="@drawable/splash"
+        android:backgroundTint="@color/inactive"
         android:src="@drawable/add"
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="100dp"/>

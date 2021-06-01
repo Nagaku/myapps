@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.FragmentDaily"
     android:orientation="vertical"
-    android:background="@color/white"
-    android:padding="10dp"
-    >
+    android:background="@drawable/cat"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/frmProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/daily_drawable"
+        android:contextClickable="true"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Title"
-        android:textColor="@color/black"/>
+        android:textColor="@color/text_blue"/>
 
     <EditText
         android:id="@+id/frmTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/form_garis"
-        android:textColor="@color/black"
+        android:textColor="@color/text_blue"
+        android:paddingVertical="5dp"
+        />
+
+    <View
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/real_round"
+        android:backgroundTint="#4741D6"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/text_blue"
         android:text="Description"
         />
 
@@ -37,7 +56,7 @@
         android:background="@drawable/form_garis"
         android:gravity="top"
         android:inputType="text|textMultiLine"
-        android:textColor="@color/black" />
+        android:textColor="@color/text_blue"/>
 
     <Button
         android:id="@+id/frmBtn"

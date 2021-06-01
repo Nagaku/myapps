@@ -7,6 +7,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.michael123.Converter;
 import com.example.michael123.R;
@@ -90,7 +93,7 @@ public class FragmentGallery extends Fragment implements Converter {
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
         recyclerView = view.findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 4));
+        recyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 3));
         populate();
         recyclerView.setAdapter(new GalleryDataAdapter(this.gallery));
         return view;
@@ -111,23 +114,15 @@ public class FragmentGallery extends Fragment implements Converter {
     }
 
     public void populate() {
-        Gallery g1 = new Gallery();
-        Drawable d = getResources().getDrawable(R.drawable.ic_launcher_background);
-        Bitmap bitmap = drawableToBitmap(d);
-        g1.setPicture(bitmap);
-        this.gallery.add(g1);
-
-        Gallery g2 = new Gallery();
-        g2.setPicture(bitmap);
-        this.gallery.add(g2);
-
-        Gallery g3 = new Gallery();
-        g3.setPicture(bitmap);
-        this.gallery.add(g3);
-
-        Gallery g4 = new Gallery();
-        g4.setPicture(bitmap);
-        this.gallery.add(g4);
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g1)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g2)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g3)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g4)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g5)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g6)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g7)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g8)))));
+        this.gallery.add((new Gallery(drawableToBitmap(getResources().getDrawable(R.drawable.g9)))));
 
     }
 

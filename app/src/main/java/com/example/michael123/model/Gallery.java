@@ -6,6 +6,14 @@ public class Gallery {
 
     private Bitmap picture;
 
+
+    public Gallery() {
+    }
+
+    public Gallery(Bitmap picture) {
+        this.picture = picture;
+    }
+
     public Bitmap getPicture() {
         return picture;
     }

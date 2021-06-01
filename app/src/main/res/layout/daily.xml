@@ -3,7 +3,7 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:background="@drawable/daily_style">
+    android:background="@drawable/rounded_reverse">
 
     <ImageView
         android:id="@+id/photoDaily"
@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="28sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="30dp"/>
+        android:textColor="@color/text_blue"
+        android:layout_marginLeft="30dp"
+        android:singleLine="true"/>
 
 </LinearLayout>
