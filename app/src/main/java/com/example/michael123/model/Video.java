@@ -1,5 +1,12 @@
 package com.example.michael123.model;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
+
 public class Video {
     String vid;
 

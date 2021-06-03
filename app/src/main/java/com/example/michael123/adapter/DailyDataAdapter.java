@@ -1,5 +1,11 @@
 package com.example.michael123.adapter;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;

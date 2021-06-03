@@ -1,5 +1,12 @@
 package com.example.michael123.fragment;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -170,6 +177,9 @@ public class FragmentDaily extends Fragment implements Converter {
                             nd.setBody(desc.getText().toString());
                             ds.add(nd);
                             dda.notifyDataSetChanged();
+                            title.setText("");
+                            desc.setText("");
+                            pp.setImageDrawable(getResources().getDrawable(R.drawable.badminton));
                             form.dismiss();
                         }
                     });

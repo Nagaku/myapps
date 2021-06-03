@@ -1,5 +1,12 @@
 package com.example.michael123;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDialog;

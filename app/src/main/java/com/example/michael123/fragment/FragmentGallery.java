@@ -1,5 +1,12 @@
 package com.example.michael123.fragment;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;

@@ -1,5 +1,12 @@
 package com.example.michael123.model;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
+
 import com.example.michael123.R;
 
 public enum PagerObject {

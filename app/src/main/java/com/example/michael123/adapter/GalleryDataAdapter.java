@@ -1,5 +1,12 @@
 package com.example.michael123.adapter;
 
+/*
+    10118008
+    Michael Nagaku Milenn Salim
+    IF1
+ */
+
+
 import android.graphics.BitmapFactory;
 import android.text.Layout;
 import android.view.LayoutInflater;
